@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>shokupan</title>
+<link href="css/index.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div id="wrapper1">
+<div id="logo"></div> <img src="img/resize.png"</div>
+		
+<div id="navigation"> <a href="index.html">  Home </a> <a href="aboutme.html">About me </a>   <a href="Contact.html">Contact me </a></div>
+<div id="shokupan"> <img src="img/shokupan.jpg"></div>
+		<div id="titlepara3"><strong><h1>SHOKU <span class="special1">PAN</span> </h1></strong></div>
+		<div id="paraunderpic3"><p>Shokupan holds a special memory for me from my first trip to Japan. I still remember the first time I bought a loaf and took that very first bite, it felt almost heavenly. The bread was incredibly soft, lightly sweet, and seemed to melt in my mouth in a way I had never experienced before. During that week in Japan, I ended up eating shokupan almost every day, whether it was plain, lightly toasted, or paired with simple spreads, and it never got boring. Even now, just thinking about it makes me crave that same texture and flavour, and I truly hope I’ll get the chance to enjoy it again on my next trip back to Japan.</p></div>
+	
+	<div id="nav-arrows">
+  
+  <div id="arrowleft">
+    <a href="chickenchop.html">
+      <img src="img/arrowleft.png" alt="left">
+      <span>Chicken<br>Chop</span>
+    </a>
+  </div>
+		<div class="carousel-container">
+    <div class="carousel-track">
+        
+        <img src="img/shokupanme1.png" alt="Ramen">
+        <img src="img/SHOKUPAN2.jpeg" alt="Matcha">
+		<img src="img/shokupan3.jpeg" alt="Matcha">
+    </div>
+
+    <button class="prev-btn">&#10094;</button>
+    <button class="next-btn">&#10095;</button>
+
+    <div class="dots-container">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+</div>
+
+  <div id="arrowright">
+    <a href="ayammasakmerah.html">
+      <span>Ayam<br> Masak</br> Merah</span>
+      <img src=img/arrowright.png alt="right">
+    </a>
+  </div>
+
+</div>
+
+ <script>const track = document.querySelector('.carousel-track');
+const nextButton = document.querySelector('.next-btn');
+const prevButton = document.querySelector('.prev-btn');
+const dots = document.querySelectorAll('.dot');
+
+let index = 0;
+
+function updateCarousel() {
+    const width = track.clientWidth;
+    track.style.transform = `translateX(${-index * width}px)`;
+    
+    // Update dots
+    dots.forEach(dot => dot.classList.remove('active'));
+    dots[index].classList.add('active');
+}
+
+nextButton.addEventListener('click', () => {
+    index = (index + 1) % dots.length; // Loops back to start
+    updateCarousel();
+});
+
+prevButton.addEventListener('click', () => {
+    index = (index - 1 + dots.length) % dots.length; // Loops to end
+    updateCarousel();
+});
+
+// Window resize listener to keep carousel responsive
+window.addEventListener('resize', updateCarousel);   </script>
+
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ayammasakmerah</title>
+<link href="css/index.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="wrapper1">
+<div id="logo"></div> <img src="img/resize.png"</div>
+		
+<div id="navigation"> <a href="index.html"> Home </a> <a href="aboutme.html">About me </a>   <a href="Contact.html">Contact Me</a></div>
+	<div id="ayammasakmerah"> <img src="img/ayammasakmerah.webp"></div>
+		<div id="titlepara4"><strong><h1>Ayam Masak<span class="special1">&nbsp;Merah</span> </h1></strong></div>
+		<div id="paraunderpic4"><p>Ayam masak merah will always remind me of my late grandma and the quiet love she showed through her cooking. After a long, tiring day at school, I would come home to the familiar smell of her ayam masak merah simmering in the kitchen, rich with spices and warmth. She would always insist that I eat, even when I told her I was already full, gently but firmly adding more rice and chicken onto my plate. At the time, I never thought much of it, but now I realise how precious those moments were. Little did I know that the ayam masak merah she cooked, filled with her care and patience, would be the best I would ever taste, and a memory I will carry with me forever.</p></div>
+	
+  
+  <div id="nav-arrows">
+  
+  <div id="arrowleft">
+    <a href="shokupan.html">
+      <img src="img/arrowleft.png" alt="left">
+      <span>Shokupan<br></span>
+    </a>
+  </div>
+		<div class="carousel-container">
+    <div class="carousel-track">
+        
+        <img src="img/ayammerah2.jpeg" alt="Ramen">
+        <img src="img/ayammasakmerahme.png" alt="Matcha">
+		<img src="img/ayammerah3.jpeg" alt="Matcha">
+    </div>
+
+    <button class="prev-btn">&#10094;</button>
+    <button class="next-btn">&#10095;</button>
+
+    <div class="dots-container">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+</div>
+
+  <div id="arrowright">
+    <a href="roticanai.html">
+      <span>Roti<br> Canai</br></span>
+      <img src=img/arrowright.png alt="right">
+    </a>
+  </div>
+
+</div>
+
+ <script>const track = document.querySelector('.carousel-track');
+const nextButton = document.querySelector('.next-btn');
+const prevButton = document.querySelector('.prev-btn');
+const dots = document.querySelectorAll('.dot');
+
+let index = 0;
+
+function updateCarousel() {
+    const width = track.clientWidth;
+    track.style.transform = `translateX(${-index * width}px)`;
+    
+    // Update dots
+    dots.forEach(dot => dot.classList.remove('active'));
+    dots[index].classList.add('active');
+}
+
+nextButton.addEventListener('click', () => {
+    index = (index + 1) % dots.length; // Loops back to start
+    updateCarousel();
+});
+
+prevButton.addEventListener('click', () => {
+    index = (index - 1 + dots.length) % dots.length; // Loops to end
+    updateCarousel();
+});
+
+// Window resize listener to keep carousel responsive
+window.addEventListener('resize', updateCarousel);   </script>
+
+
+</body>
+</html>

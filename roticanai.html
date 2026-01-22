@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>roitcanai</title>
+<link href="css/index.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div id="wrapper1">
+	<div id="logo"></div> <img src="img/resize.png"</div>
+	<div id="navigation"> <a href="index.html"> Home </a> <a href="aboutme.html">About me </a>   <a href="Contact.html">Contact  me</a></div>
+	<div id="roticanai"> <img src="img/Gemini_Generated_Image_n1x4lpn1x4lpn1x4.png"></div>
+		<div id="titlepara1"><strong><h1>ROTI <span class="special3"> CANAI</span></h1></strong></div>
+		<div id="paraunderpic2"> <p>Roti canai has always been my family’s go-to meal whenever money was tight, and because of that, it holds a very special place in my heart. It wasn’t just about being affordable, but about how it brought all of us together at the same table, sharing plates of warm, flaky roti with dhal or curry. Some of my fondest memories are sitting with my family, tearing pieces of roti with my hands while watching my favourite cartoons on TV, completely absorbed and content. Those simple moments of eating, laughing, and being together made roti canai more than just food, it became a symbol of comfort, bonding, and home for me.</p></div>
+
+
+		<div id="nav-arrows">
+  
+  <div id="arrowleft">
+    <a href="ayammasakmerah.html">
+      <img src="img/arrowleft.png" alt="left">
+		<span>Ayam<br>Masak</br>Merah</span>
+    </a>
+  </div>
+		<div class="carousel-container">
+    <div class="carousel-track">
+        
+        <img src="img/rotime.png" alt="Ramen">
+        <img src="img/roti3.jpeg" alt="Matcha">
+		<img src="img/roti2.jpeg" alt="Matcha">
+    </div>
+
+    <button class="prev-btn">&#10094;</button>
+    <button class="next-btn">&#10095;</button>
+
+    <div class="dots-container">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+</div>
+
+  <div id="arrowright">
+    <a href="chickenchop.html">
+      <span>Chicken<br> Chop</br></span>
+      <img src=img/arrowright.png>
+    </a>
+  </div>
+
+</div>
+
+ <script>const track = document.querySelector('.carousel-track');
+const nextButton = document.querySelector('.next-btn');
+const prevButton = document.querySelector('.prev-btn');
+const dots = document.querySelectorAll('.dot');
+
+let index = 0;
+
+function updateCarousel() {
+    const width = track.clientWidth;
+    track.style.transform = `translateX(${-index * width}px)`;
+    
+    // Update dots
+    dots.forEach(dot => dot.classList.remove('active'));
+    dots[index].classList.add('active');
+}
+
+nextButton.addEventListener('click', () => {
+    index = (index + 1) % dots.length; // Loops back to start
+    updateCarousel();
+});
+
+prevButton.addEventListener('click', () => {
+    index = (index - 1 + dots.length) % dots.length; // Loops to end
+    updateCarousel();
+});
+
+// Window resize listener to keep carousel responsive
+window.addEventListener('resize', updateCarousel);   </script>
+
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CHICKENCHOP</title>
+<link href="css/index.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div id="wrapper1">
+	<div id="logo"></div> <img src="img/resize.png"</div>
+	<div id="navigation"> <a href="index.html"> Home </a> <a href="aboutme.html">About me </a>   <a href="Contact.html">Contact me </a></div>
+	
+    <div id="chickenchop"> <img src="img/chicken chop.webp"></div>
+	<div id="titlepara2"><strong><h1>CHICKEN <span class="special3">CHOP</span></h1></strong></div>
+	<div id="paraunderpic"> <p>Grilled chicken chop has always been one of my ultimate comfort foods. There’s something deeply satisfying about a juicy, well-seasoned chicken chop with crispy edges, paired with rich sauce and simple sides that never fail to hit the spot. I especially love eating it back in my hometown, Ipoh, where it has become part of my routine dinners with my uncles and aunties. Most of the time, it’s our go-to meal after a long gaming session at a nearby cybercafe, when everyone is tired, hungry, and just looking for something familiar and comforting. Those nights make the chicken chop taste even better, not just because of the food itself, but because of the memories and the people I share it with.</p></div>
+	
+		
+		<div id="nav-arrows">
+  
+  <div id="arrowleft">
+    <a href="roticanai.html">
+      <img src="img/arrowleft.png" alt="left">
+		<span>Roti<br>Canai</br></span>
+    </a>
+  </div>
+		<div class="carousel-container">
+    <div class="carousel-track">
+        
+        <img src="img/chickenchop2.jpeg" alt="Ramen">
+        <img src="img/chciken3.jpeg" alt="Matcha">
+		<img src="img/me4.jpeg" alt="Matcha">
+    </div>
+
+    <button class="prev-btn">&#10094;</button>
+    <button class="next-btn">&#10095;</button>
+
+    <div class="dots-container">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+</div>
+
+  <div id="arrowright">
+    <a href="shokupan.html">
+      <span>Shokupan</span>
+      <img src=img/arrowright.png>
+    </a>
+  </div>
+
+</div>
+
+ <script>const track = document.querySelector('.carousel-track');
+const nextButton = document.querySelector('.next-btn');
+const prevButton = document.querySelector('.prev-btn');
+const dots = document.querySelectorAll('.dot');
+
+let index = 0;
+
+function updateCarousel() {
+    const width = track.clientWidth;
+    track.style.transform = `translateX(${-index * width}px)`;
+    
+    // Update dots
+    dots.forEach(dot => dot.classList.remove('active'));
+    dots[index].classList.add('active');
+}
+
+nextButton.addEventListener('click', () => {
+    index = (index + 1) % dots.length; // Loops back to start
+    updateCarousel();
+});
+
+prevButton.addEventListener('click', () => {
+    index = (index - 1 + dots.length) % dots.length; // Loops to end
+    updateCarousel();
+});
+
+// Window resize listener to keep carousel responsive
+window.addEventListener('resize', updateCarousel);   </script>
+
+
+</body>
+</html>

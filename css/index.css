@@ -1,0 +1,261 @@
+@charset "utf-8";
+
+
+/* CSS Document */
+body    {background-color: whitesmoke;}
+
+#wrapper1 { background-color: white; margin: 0px auto; width: 900px;height: 1450px; display: f } 
+
+#logo {float: left} 
+
+#navigation	{clear:both; word-spacing:10px; text-decoration-line: none; border-top: solid black 1px; border-bottom: solid black 1px; margin:70px 50px 5px 5px; padding: 5px 130px 5px 100px; float:right}
+
+#navigation a {font-family: Arial; font-size:15px; text-decoration-line: none; margin-left: 10px; font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"}
+
+#navigation a:link {color:#000;}
+#navigation a:hover {color:#c60;}
+
+#betweenimageandtop {text-align: center; width: 900px; font-size:30px; font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"}
+
+#underpics {font-size: 18px;padding: 23px}
+.leftcontent1 {display: flex; align-items: flex-start;  gap: 20px;font-family:  Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "Monaco", "Courier New", "monospace";border-bottom: solid ;black: 1px  }
+
+.leftcontent1 img {width: 300px;height: 390px;padding-bottom: 50px;border-radius: 100px}
+#othermeimages img {width: 220px; padding-top: 100px;padding-left: 40px;border-radius:3400px 200px 100px 300px }
+.special {font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif"; color: orange; font-style: italic}
+
+.special3 {font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif"; color: wheat; font-style: italic}
+#roticanai {background-color: antiquewhite;border-radius: 200px}
+#roticanai img{width: 400px;display: flex;padding-left: 240px; border-radius: 200px;background-color: wheat}
+#rotime img {width: 200px;height: 300px;padding-left: 350px;border-radius: 90px 90px 20px 300px}
+#rotime {background-color: wheat;border-radius: 200px}
+
+#chickenchop {background-color: wheat; border-radius: 200px}
+#chickenchop img {width: 400px;display: flex;padding-left: 230px; background-color: burlywood; border-radius: 200px}
+#chickenme img {width: 200px;height: 300px;padding-left: 350px;border-radius: 90px 90px 20px 300px}
+#chickenme {background-color: wheat;border-radius: 200px}
+
+#shokupan {background-color: chocolate; border-radius: 200px}
+#shokupan img {width: 400px;display: flex;padding-left: 240px; border-radius: 200px;background-color: wheat}
+#shokupanme img {width: 200px;height: 300px;padding-left: 350px;border-radius: 90px 90px 20px 300px}
+#shokupanme {background-color: wheat;border-radius: 200px}
+
+#ayammasakmerah {background-color: chocolate; border-radius: 200px}
+#ayammasakmerah img {width: 400px;display: flex;padding-left: 240px; border-radius: 200px;background-color: darkolivegreen}
+#ayammerahme img {width: 200px;height: 300px;padding-left: 350px;border-radius: 90px 90px 20px 300px}
+#ayammerahme {background-color: wheat;border-radius: 200px}
+
+
+#nav-arrows {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 40px 80px;
+	box-sizing: border-box;background-color: wheat;border-radius: 200px} /* ⭐ IMPORTANT */
+/* LEFT */
+#arrowleft a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* RIGHT */
+#arrowright a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: inherit;
+}
+
+#arrowleft img,
+#arrowright img {
+  width: 35px;
+}
+
+#arrowleft span,
+#arrowright span {
+  font-size: 23px;
+  font-style: italic;
+}
+
+#paraunderpic {width: 800px;padding-left: 50px;font-size: 18px;font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace"}
+
+#paraunderpic2 {width: 800px;padding-left: 50px;font-size: 18px;font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace"}
+
+.special1 {font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif"; color: orange; font-style: italic}
+
+#titlepara1 {padding-left: 350px; font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";color: rosybrown}
+#titlepara2 {padding-left: 320px; font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";color: firebrick}
+#titlepara3 {padding-left: 350px; font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";color: chocolate}
+#titlepara4 {padding-left: 350px; font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";color: chocolate}
+
+#paraunderpic3 {width: 800px;padding-left: 50px;font-size: 18px;font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace"}
+#paraunderpic4 {width: 800px;padding-left: 50px;font-size: 18px;font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace"}
+#paracontact  {font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";font-size: 20px;padding: 40px}
+
+#end img {width: 500px;padding: 300px 0px 0px 230px}
+.food-box {
+    position: relative;
+	width: 240px;}  
+    
+
+.food-box {
+    display: block;        /* Ensures it behaves as a block */
+    margin-left: auto;     /* Magic for centering block elements */
+    margin-right: auto;    /* Magic for centering block elements */
+    position: relative;
+    width: 250px;          /* Match your image width */
+    margin-bottom: 40px;   /* Adds space between the items */
+}
+
+/* This centers the text labels on top of the images */
+.food-box p {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: wheat;
+    padding: 5px 15px;
+    border-radius: 20px;
+    white-space: nowrap;
+    margin: 0;
+}
+
+#videocontainer1 p, 
+#videocontainer2 p, 
+#videocontainer3 p, 
+#videocontainer4 p {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%); /* This perfectly centers the text horizontally */
+    background-color: wheat;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-family: "Gill Sans", sans-serif;
+    font-size: 20px;
+    margin: 0;
+    white-space: nowrap;      /* Prevents text from breaking into two lines */
+    z-index: 100;text-decoration: none;color: inherit
+}
+
+.food-box a {
+    text-decoration: none;
+    color: inherit; /* This makes it use the color of the text around it */
+}
+#rotihover2 {width: 245px ;margin-top: 32px;height: 205px}
+#rotihover1 img{padding-left: 20px}
+#rotivideo2 {width:250px;margin-top: 32px ;height: 215px}
+
+#underpics{font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";width: 800px;padding-left: 50px  }
+
+.carousel-container {
+    position: relative;
+    /* Increased width from 200px to 600px to make it longer */
+    width: 200%; 
+    max-width: 300px; 
+    
+    /* 'auto' on left/right centers the div in its parent container */
+    margin:  auto; 
+    
+    overflow: hidden;
+    border-radius: 15px;
+    height: 350px; /* Increased height to match a longer look */
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+}
+
+.carousel-track img {
+    /* Ensure images fill the new longer width */
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; /* This prevents the image from stretching weirdly */
+    flex-shrink: 0;
+}
+
+/* Navigation Buttons */
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 16px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+.prev-btn { left: 10px; }
+.next-btn { right: 10px; }
+
+.prev-btn:hover, .next-btn:hover { background: rgba(0, 0, 0, 0.8); }
+
+/* Dots */
+.dots-container {
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.active { background-color: #717171; }
+
+/* Container for the contact section */
+#contact-container {
+    text-align: center;
+    padding: 50px 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+#contact-container h2 {
+    font-family: "Gill Sans", sans-serif;
+    color: #4b2c61; /* Matches your current label color */
+    margin-bottom: 30px;
+}
+
+/* Row for icons */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Space between icons */
+}
+
+/* Icon styling */
+.social-links img {
+    width: 60px; /* Adjust size as needed */
+    height: 60px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+.social-links img:hover {
+    transform: scale(1.2); /* Grows slightly when hovered */
+}
+
+/* Fix for blue link lines */
+.social-links a {
+    text-decoration: none;
+	outline: none;}
+
